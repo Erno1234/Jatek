@@ -7,7 +7,6 @@ class Targy {
 
     private String nev, leiras;
     private UUID id;
-    private ArrayList<Targy> targyak;
 
     public Targy(String nev, String leiras) {
         this.nev = nev;
@@ -15,15 +14,12 @@ class Targy {
         this.id = UUID.randomUUID();
     }
 
-    public void felvesz(Targy targy) {
-        felvesz(targy, 1);
-
+    public String getNev() {
+        return nev;
     }
 
-    public void felvesz(Targy targy, int darab) {
-        for (int i = 0; i <= darab; i++) {
-            targyak.add(targy);
-        }
-
+    public String getLeiras() {
+        return leiras;
     }
+
 }
