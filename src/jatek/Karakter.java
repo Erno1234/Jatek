@@ -7,9 +7,9 @@ public class Karakter {
 
     private int eletero, ugyesseg, szerencse;
     private ArrayList<Targy> felszereles;
-    Random rand = new Random();
+    private final Random rand = new Random();
 
-    public Karakter(ArrayList<Targy> felszereles) {
+    public Karakter() {
 
         this.eletero = rand.nextInt(14, 24) + 12;
         this.ugyesseg = rand.nextInt(1, 6) + 6;
@@ -55,7 +55,6 @@ public class Karakter {
         if (vanFelszereles(nev)) {
             for (int i = 0; i < felszereles.size(); i++) {
                 if (felszereles.get(i).getNev().equals(nev)) {
-                    felszereles.remove(i);
                     keszlet++;
                 }
             }
@@ -81,7 +80,6 @@ public class Karakter {
             if (vanFelszereles(nev)) {
                 for (int i = 0; i < felszereles.size(); i++) {
                     if (felszereles.get(i).getNev().equals(nev)) {
-                        felszereles.remove(i);
                         keszlet++;
                     }
                 }
