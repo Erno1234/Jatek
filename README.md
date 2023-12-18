@@ -6,5 +6,8 @@ A probléma:
 Nehezen tesztelhető program, túl sok hibalehetőség az elágazásoknál
 
 Ötletelések:
- 
+ építő, állapot, diszítő, megfigyelő
+Megoldás
+	állapot
+
 Pálóci Ernő
